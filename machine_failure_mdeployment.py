@@ -15,7 +15,7 @@ model=joblib.load("machine_failure_prediction.pkl")
 
 st.title("Machine Failure Prediction")
 
-tempMod=st.number_input("Temperature")
+tempMode=st.number_input("tempMode")
 AQ=st.number_input("AQ")
 USS=st.number_input("USS")
 CS=st.number_input("CS")
@@ -25,7 +25,7 @@ IP=st.number_input("IP")
 Temperature=st.number_input("Temperature")
 
 df=pd.DataFrame({
-    "tempMod":[tempMod],
+    "tempMode":[tempMode],
     "AQ":[AQ],
     "USS":[USS],
     "CS":[CS],
